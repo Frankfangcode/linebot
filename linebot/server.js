@@ -302,10 +302,10 @@ function getPricingMessage() {
       body: {
         type: 'box', layout: 'vertical', spacing: 'md',
         contents: [
-          pricingItem('買賣過戶', 'NT$12,000 起'),
-          pricingItem('贈與登記', 'NT$12,000 起'),
-          pricingItem('繼承登記', 'NT$15,000 起'),
-          pricingItem('抵押權設定/塗銷', 'NT$4,000 起'),
+          pricingItem('買賣過戶登記', 'NT$8,000 起'),
+          pricingItem('贈與登記', 'NT$20,000 起'),
+          pricingItem('繼承登記', 'NT$30,000 起'),
+          pricingItem('抵押權設定/塗銷', 'NT$2,000 起'),
           pricingItem('合約撰擬/簽證', 'NT$6,000 起'),
           pricingItem('稅務試算規劃', 'NT$1,000 起'),
         ],
@@ -341,7 +341,7 @@ function getBookingMessage() {
       '   請告知：姓名、聯絡電話、諮詢項目\n\n' +
       '2. 電話預約\n' +
       '   03-4161262\n\n' +  // TODO: 填入實際電話
-      '3. 親臨事務所\n' +
+      '3. 電話預約後親臨事務所\n' +
       '   桃園市中壢區華勛街5巷15號\n\n' + // TODO: 填入實際地址
       '營業時間：週一至週五 09:00-18:00\n' +
       '週六可預約\n\n' +
