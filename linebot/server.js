@@ -310,12 +310,12 @@ function getPricingMessage() {
       body: {
         type: 'box', layout: 'vertical', spacing: 'md',
         contents: [
+          pricingItem('稅務試算規劃', 'NT$1,000 起'),
+          pricingItem('抵押權設定/塗銷', 'NT$2,000 起'),
+          pricingItem('合約撰擬/簽證', 'NT$6,000 起'),
           pricingItem('買賣過戶登記', 'NT$8,000 起'),
           pricingItem('贈與登記', 'NT$20,000 起'),
           pricingItem('繼承登記', 'NT$30,000 起'),
-          pricingItem('抵押權設定/塗銷', 'NT$2,000 起'),
-          pricingItem('合約撰擬/簽證', 'NT$6,000 起'),
-          pricingItem('稅務試算規劃', 'NT$1,000 起'),
         ],
       },
       footer: {
