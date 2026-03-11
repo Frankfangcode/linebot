@@ -102,8 +102,8 @@
 
 | 項目 | 說明 | 填寫 |
 |------|------|------|
-| Channel Access Token | LINE Developers Console 取得 |em3PBsLltj9WgKKWOpqd2XK4yhT0fSpJT7FRkYKn8iRXHy8trBeSDaoC5X96l9ip+GNEUrIGW9NiRB4HbkWLP3PdgTiXajd5z5pQuu/+eO6TT9BX8E2NoPES/b4RVrxcqlBMEiSuRpF2rF1otRpNOwdB04t89/1O/w1cDnyilFU=|
-| Channel Secret | LINE Developers Console 取得 |4c15cc4e8761fef0ee7a31d90b28d4a1|
+| Channel Access Token | LINE Developers Console 取得 ||
+| Channel Secret | LINE Developers Console 取得 ||
 | Webhook URL | 部署伺服器後取得 | |
 
 ### LINE Bot 申請步驟
