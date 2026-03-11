@@ -92,6 +92,14 @@ async function handleTextMessage(event) {
     });
   }
 
+  // 常見問題
+  if (matchKeywords(lowerText, ['常見問題', 'faq', '問題', '疑問', 'q&a'])) {
+    return client.replyMessage({
+      replyToken: event.replyToken,
+      messages: [getFaqMenu()],
+    });
+  }
+
   // 收費
   if (matchKeywords(lowerText, ['收費', '費用', '多少錢', '價格', '報價', '代書費'])) {
     return client.replyMessage({
