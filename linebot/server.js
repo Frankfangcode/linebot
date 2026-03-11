@@ -194,17 +194,17 @@ async function handlePostback(event) {
   const data = event.postback.data;
 
   const handlers = {
-    action=services: getServicesMessage,
-    action=pricing: getPricingMessage,
-    action=booking: getBookingMessage,
-    action=faq: getFaqMenu,
-    action=hours: getOfficeHoursMessage,
-    action=location: getLocationMessage,
-    action=tax_calc: getTaxCalcMessage,
-    action=documents: getDocumentsMenu,
-    action=doc_buy: getDocBuySell,
-    action=doc_inherit: getDocInherit,
-    action=doc_gift: getDocGift,
+    'action=services': getServicesMessage,
+    'action=pricing': getPricingMessage,
+    'action=booking': getBookingMessage,
+    'action=faq': getFaqMenu,
+    'action=hours': getOfficeHoursMessage,
+    'action=location': getLocationMessage,
+    'action=tax_calc': getTaxCalcMessage,
+    'action=documents': getDocumentsMenu,
+    'action=doc_buy': getDocBuySell,
+    'action=doc_inherit': getDocInherit,
+    'action=doc_gift': getDocGift,
   };
 
   // Parse postback data
