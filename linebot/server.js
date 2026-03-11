@@ -350,7 +350,7 @@ function getBookingMessage() {
       '2. 電話預約\n' +
       '   03-4161262\n\n' +  // TODO: 填入實際電話
       '3. 電話預約後親臨事務所\n' +
-      '   桃園市中壢區華勛街5巷15號\n\n' + // TODO: 填入實際地址
+      '   桃園市中壢區中正路291號6樓\n\n' + // TODO: 填入實際地址
       '營業時間：週一至週五 09:00-18:00\n' +
       '週六可預約\n\n' +
       '我們將於 1 個工作天內回覆您！',
@@ -374,9 +374,9 @@ function getLocationMessage() {
   return {
     type: 'location',
     title: '方珮玲地政士事務所',
-    address: '桃園市中壢區華勛街5巷15號', // TODO: 填入實際地址
-    latitude: 24.9537,  // TODO: 填入實際緯度
-    longitude: 121.2257, // TODO: 填入實際經度
+    address: '桃園市中壢區中正路291號6樓（來訪請先電話預約）',
+    latitude: 24.9577,  // 中正路291號6樓
+    longitude: 121.2254, // 中正路291號6樓
   };
 }
 
