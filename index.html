@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方珮玲地政士事務所 | 專業不動產稅務與登記專家</title>
+    <meta name="description" content="方珮玲地政士事務所提供不動產登記、稅務規劃、繼承贈與、合約簽證、日本置產等專業服務。免費LINE線上諮詢，桃園中壢地區首選。">
+    <meta name="keywords" content="地政士,代書,不動產登記,稅務規劃,繼承,贈與,房屋買賣,桃園代書,中壢地政士,方珮玲">
+    <meta property="og:title" content="方珮玲地政士事務所 | 專業不動產稅務與登記專家">
+    <meta property="og:description" content="專注不動產登記、稅務規劃、日本置產移民。結合資深律師團隊，守護您的資產。">
+    <meta property="og:type" content="website">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        .font-serif-heading { font-family: 'Playfair Display', serif; }
+        .text-gold-gradient {
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gold { background-color: #c5a059; }
+        .hover-gold:hover { color: #c5a059; }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        html { scroll-behavior: smooth; }
+
+        /* FAQ Accordion */
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
+        .faq-answer.open { max-height: 500px; }
+        .faq-chevron { transition: transform 0.3s ease; }
+        .faq-chevron.rotate { transform: rotate(180deg); }
+
+        /* Floating LINE Button */
+        .floating-line {
+            position: fixed; bottom: 24px; right: 24px; z-index: 999;
+            width: 60px; height: 60px; border-radius: 50%;
+            background: #06C755; color: white; display: flex;
+            align-items: center; justify-content: center;
+            box-shadow: 0 4px 20px rgba(6, 199, 85, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer; text-decoration: none;
+        }
+        .floating-line:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(6, 199, 85, 0.6);
+        }
+
+        /* Back to top */
+        .back-to-top {
+            position: fixed; bottom: 96px; right: 28px; z-index: 998;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: #1f2937; color: white; display: none;
+            align-items: center; justify-content: center;
+            cursor: pointer; transition: opacity 0.3s;
+            border: 1px solid #374151;
+        }
+        .back-to-top.show { display: flex; }
+
+        /* Tab styling */
+        .tab-btn { transition: all 0.3s; }
+        .tab-btn.active { color: #c5a059; border-color: #c5a059; }
+
+        /* Process step connector */
+        .process-step::after {
+            content: ''; position: absolute; top: 40px; left: calc(100%);
+            width: 100%; height: 2px; background: #e5e7eb;
+        }
+        .process-step:last-child::after { display: none; }
+
+        /* Testimonial card */
+        .testimonial-card { transition: transform 0.3s; }
+        .testimonial-card:hover { transform: translateY(-4px); }
+
+        /* Calculator result animation */
+        .calc-result { transition: all 0.5s ease; }
+
+        /* TODO marker for owner */
+        .todo-fill {
+            background: #fef3c7 !important;
+            border: 2px dashed #f59e0b !important;
+            position: relative;
+        }
+        .todo-fill::after {
+            content: 'TODO: 請填入';
+            position: absolute; top: -10px; right: 8px;
+            background: #f59e0b; color: white;
+            font-size: 10px; padding: 1px 6px; border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ==================== 導航列 ==================== -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-gray-900/95 backdrop-blur-sm shadow-lg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                    <div class="text-xl md:text-2xl font-bold font-serif-heading tracking-wider flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced text-yellow-500"></i>
+                        <span>FANG PEI-LING <span class="text-yellow-500">OFFICE</span></span>
+                    </div>
+                    <span class="ml-3 text-sm tracking-widest border-l border-gray-600 pl-3 text-gray-400 hidden lg:block">方珮玲地政士事務所</span>
+                </div>
+
+                <!-- 電腦版選單 -->
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="#home" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">首頁</a>
+                    <a href="#about" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">關於</a>
+                    <a href="#services" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">服務</a>
+                    <a href="#pricing" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">收費</a>
+                    <a href="#calculator" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">試算</a>
+                    <a href="#faq" class="hover:text-yellow-500 transition duration-300 text-sm tracking-widest">常見問題</a>
+                    <a href="#contact" class="px-5 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 transition duration-300 rounded-sm text-sm tracking-widest">預約諮詢</a>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-900 border-t border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-white hover:text-yellow-500">首頁</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-yellow-500">關於事務所</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-yellow-500">專業服務</a>
+                <a href="#pricing" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-yellow-500">收費標準</a>
+                <a href="#calculator" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-yellow-500">稅務試算</a>
+                <a href="#faq" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-yellow-500">常見問題</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-yellow-500 font-bold">預約諮詢</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== Hero Section ==================== -->
+    <header id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80" alt="Office Interior" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/60 to-gray-900/90"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-16">
+            <p class="text-yellow-500 tracking-[0.3em] uppercase mb-4">Professional Land Administration Agent</p>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 font-serif-heading leading-tight">
+                專業誠信，<br>守護您的<span class="text-yellow-500">資產</span>
+            </h1>
+            <p class="text-gray-200 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
+                方珮玲地政士事務所專注於不動產登記、稅務規劃、日本置產移民與資產傳承。結合台灣資深律師團隊，我們以嚴謹的態度與深厚的專業，為您解決繁雜的房產難題。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="px-8 py-3 bg-yellow-600 text-white rounded-sm hover:bg-yellow-500 transition duration-300 tracking-wider shadow-lg">
+                    瀏覽服務項目
+                </a>
+                <a href="#contact" class="px-8 py-3 border border-white text-white rounded-sm hover:bg-white hover:text-gray-900 transition duration-300 tracking-wider">
+                    立即預約諮詢
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white opacity-70 hover:opacity-100"><i class="fa-solid fa-chevron-down text-2xl"></i></a>
+        </div>
+    </header>
+
+    <!-- ==================== 關於我們 ==================== -->
+    <section id="about" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-yellow-100 rounded-tl-3xl -z-10"></div>
+                    <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-gray-100 rounded-br-3xl -z-10"></div>
+                    <!-- ===== TODO: 請替換為方珮玲地政士的個人專業照片 ===== -->
+                    <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1632&q=80" alt="方珮玲地政士" class="rounded-sm shadow-xl w-full h-auto object-cover relative z-10">
+                    <div class="absolute -bottom-8 -left-8 bg-gray-900 text-white p-6 shadow-2xl z-20 hidden md:block max-w-xs">
+                        <div class="flex items-center gap-4 mb-2">
+                            <!-- ===== TODO: 請修改實際執業年資 ===== -->
+                            <div class="text-4xl text-yellow-500 font-bold">25+</div>
+                            <div class="text-sm uppercase tracking-wider">年<br>執業經驗</div>
+                        </div>
+                        <p class="text-gray-400 text-xs">經手無數不動產移轉與信託案件，深受客戶信賴。</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">About Us</h2>
+                    <h3 class="text-4xl font-serif-heading font-bold text-gray-900 mb-6">用心傾聽<br>專業解決</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                        方珮玲地政士事務所成立以來，始終秉持著「誠信、專業、效率」的核心價值。在瞬息萬變的不動產法規中，我們是您最可靠的引路人。不論是複雜的土地分割、房屋買賣過戶，還是家族資產的節稅規劃，我們都能提供最精準的法律見解與執行方案。
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-justify">
+                        我們深知每一筆不動產背後，都代表著客戶一輩子的心血或家族的傳承。因此，我們不僅僅是辦理手續，更致力於為客戶創造最大的資產價值與安全保障。
+                    </p>
+
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-gray-700"><i class="fa-solid fa-check text-yellow-500 mr-3"></i> 國家考試合格認證地政士</li>
+                        <li class="flex items-center text-gray-700"><i class="fa-solid fa-check text-yellow-500 mr-3"></i> 專精不動產稅務與節稅規劃</li>
+                        <li class="flex items-center text-gray-700"><i class="fa-solid fa-check text-yellow-500 mr-3"></i> 全程履約保證，交易安全零風險</li>
+                        <!-- ===== TODO: 可增加更多個人資歷，如：公會理事、講師經歷等 ===== -->
+                    </ul>
+
+                    <a href="#contact" class="inline-block text-gray-900 font-bold border-b-2 border-yellow-500 pb-1 hover:text-yellow-600 transition duration-300">
+                        了解更多我們的資歷 <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 數據展示 ==================== -->
+    <section class="py-20 bg-gray-900 text-white parallax" style="background-image: linear-gradient(rgba(17, 24, 39, 0.85), rgba(17, 24, 39, 0.85)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- ===== TODO: 請修改為實際數據 ===== -->
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">1000+</div>
+                    <div class="text-gray-300 text-sm tracking-widest">成功案件</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">50+</div>
+                    <div class="text-gray-300 text-sm tracking-widest">企業合作顧問</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">100%</div>
+                    <div class="text-gray-300 text-sm tracking-widest">案件完成率</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">TOP</div>
+                    <div class="text-gray-300 text-sm tracking-widest">業界口碑</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 專業服務 ==================== -->
+    <section id="services" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">Professional Services</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">地政士核心業務與特色</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">依據《地政士法》及實務需求，為您提供最嚴謹、合法的資產管理服務。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-stamp text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">代理不動產登記與測量</h4>
+                    <ul class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow space-y-2">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>權利移轉：</strong>辦理買賣、贈與、繼承、信託等所有權移轉登記。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>他項權利：</strong>銀行或私人抵押權設定、塗銷及變更登記。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>測量申請：</strong>代理土地複丈、建物保存登記、分割與合併測量。</span></li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-calculator text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">稅務申報與節稅規劃</h4>
+                    <ul class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow space-y-2">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>房地合一稅：</strong>精確計算並申報個人不動產交易所得稅。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>遺贈稅規劃：</strong>針對家族傳承提供合法節稅方案與申報。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>土地稅務：</strong>土地增值稅與契稅之試算代辦。</span></li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-file-contract text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">合約撰擬、簽證與認證</h4>
+                    <ul class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow space-y-2">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>契約撰擬：</strong>擬定買賣、租賃、共有物分割等各類協議書。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>簽證服務：</strong>確認當事人身分及真意，強化合約法律效力。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>公證代辦：</strong>代理向法院或公證人申請各類認證事項。</span></li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-magnifying-glass text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">產權調查與法規代辦</h4>
+                    <ul class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow space-y-2">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>產權調查：</strong>調閱謄本核實限制登記、違建或產權瑕疵。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>非訟案件：</strong>代撰存證信函、聲請強制執行、支付命令。</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-yellow-500 mt-1 mr-2 text-xs"></i><span><strong>提存與貸款：</strong>法院提存業務辦理及銀行房貸估價輔助。</span></li>
+                    </ul>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-gavel text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">專業律師團隊配合</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                        與台灣資深律師事務所策略聯盟。針對複雜的「共有物分割訴訟」、「遺產爭訟」及各類「不動產糾紛」，提供最堅強的法律訴訟後盾，補足傳統代書業務外的法律防線。
+                    </p>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <div class="bg-white group hover:shadow-2xl transition duration-500 rounded-sm overflow-hidden border border-gray-100 p-8 flex flex-col h-full">
+                    <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mb-6 group-hover:bg-yellow-500 transition duration-300 flex-shrink-0">
+                        <i class="fa-solid fa-earth-asia text-2xl text-gray-700 group-hover:text-white"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900 mb-4 h-14 flex items-center">日本不動產與移民</h4>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+                        結合國際視野，專精日本東京、大阪房產投資及經營管理簽證申請。提供跨國購屋、融資貸款協助、稅務規劃及移民諮詢一條龍服務，助您資產佈局全球。
+                    </p>
+                    <a href="#contact" class="text-yellow-600 text-sm font-bold hover:text-yellow-800 mt-auto">諮詢詳情 <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-500 italic mb-6">"專業的事，交給方珮玲地政士事務所，讓您安心無虞。"</p>
+                <a href="#contact" class="inline-block px-8 py-3 bg-transparent border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition duration-300 rounded-sm tracking-wider uppercase text-sm font-bold">
+                    聯絡我們
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 辦理流程 (NEW) ==================== -->
+    <section id="process" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">Service Process</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">服務辦理流程</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">從初步諮詢到案件完成，每一步都為您把關。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="text-center relative">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">1</div>
+                    <h4 class="font-bold text-gray-900 mb-2">免費諮詢</h4>
+                    <p class="text-gray-500 text-sm">透過電話、LINE 或親臨事務所，說明您的需求。</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">2</div>
+                    <h4 class="font-bold text-gray-900 mb-2">案件評估</h4>
+                    <p class="text-gray-500 text-sm">專業評估案件複雜度，提供報價與所需文件清單。</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">3</div>
+                    <h4 class="font-bold text-gray-900 mb-2">備齊文件</h4>
+                    <p class="text-gray-500 text-sm">依清單準備證件與資料，我們協助確認無誤。</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">4</div>
+                    <h4 class="font-bold text-gray-900 mb-2">送件辦理</h4>
+                    <p class="text-gray-500 text-sm">代理向地政機關、稅捐處等單位送件申辦。</p>
+                </div>
+                <div class="text-center relative">
+                    <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">5</div>
+                    <h4 class="font-bold text-gray-900 mb-2">完成交付</h4>
+                    <p class="text-gray-500 text-sm">案件完成後交付權狀等文件，並提供後續諮詢。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 收費標準 (NEW) ==================== -->
+    <section id="pricing" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">Fee Schedule</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">收費標準參考</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">以下為代書費參考範圍，實際費用依案件複雜度調整。不含政府規費、稅金及銀行相關費用。</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- ===== TODO: 請確認並修改實際收費金額 ===== -->
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-house text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">買賣過戶</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 12,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>產權移轉登記</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>稅務申報代辦</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>契約簽證</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-gift text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">贈與登記</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 12,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>贈與稅申報</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>產權移轉登記</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>節稅方案規劃</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-scroll text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">繼承登記</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 15,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>遺產稅申報</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>繼承登記辦理</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>協議分割協助</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-building-columns text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">抵押權設定/塗銷</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 4,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>銀行貸款設定</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>清償塗銷</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>轉貸協助</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-file-signature text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">合約撰擬/簽證</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 6,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>買賣/租賃合約</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>分割協議書</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>公證認證代辦</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 p-8 hover:shadow-xl transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-coins text-yellow-500 text-xl"></i>
+                        <h4 class="font-bold text-lg text-gray-900">稅務試算規劃</h4>
+                    </div>
+                    <div class="text-3xl font-bold text-gray-900 mb-2">NT$ 1,000 <span class="text-base font-normal text-gray-400">起</span></div>
+                    <ul class="text-gray-500 text-sm space-y-2 mt-4">
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>土地增值稅試算</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>房地合一稅評估</li>
+                        <li><i class="fa-solid fa-check text-yellow-500 mr-2"></i>遺贈稅節稅規劃</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-yellow-50 border border-yellow-200 rounded-sm p-6 text-center">
+                <p class="text-gray-600 text-sm"><i class="fa-solid fa-circle-info text-yellow-500 mr-2"></i>以上費用僅為代書服務費參考，不含地政規費、稅捐處稅金、印花稅、銀行帳管費及保險費。實際報價以案件評估為準，歡迎來電或 LINE 諮詢。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 稅務試算工具 (NEW) ==================== -->
+    <section id="calculator" class="py-20 md:py-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">Tax Calculator</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">稅務快速試算</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+                <p class="mt-4 text-gray-500 max-w-2xl mx-auto">輸入基本資料，快速估算您可能需要繳納的稅額。此為概估結果，實際金額請洽詢本事務所。</p>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-10">
+                <button class="tab-btn active px-6 py-2 border-b-2 border-yellow-500 text-yellow-600 font-bold text-sm" onclick="showCalcTab('land-tax')">土地增值稅</button>
+                <button class="tab-btn px-6 py-2 border-b-2 border-transparent text-gray-500 font-bold text-sm" onclick="showCalcTab('deed-tax')">契稅</button>
+                <button class="tab-btn px-6 py-2 border-b-2 border-transparent text-gray-500 font-bold text-sm" onclick="showCalcTab('mortgage')">房貸試算</button>
+            </div>
+
+            <!-- 土地增值稅 Calculator -->
+            <div id="calc-land-tax" class="calc-panel max-w-2xl mx-auto">
+                <div class="bg-gray-50 rounded-sm p-8 border border-gray-200">
+                    <h4 class="font-bold text-lg mb-6 text-gray-900"><i class="fa-solid fa-landmark text-yellow-500 mr-2"></i>土地增值稅概估</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">前次移轉現值 (元)</label>
+                            <input type="number" id="prev-value" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：5,000,000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">本次申報現值 (元)</label>
+                            <input type="number" id="curr-value" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：8,000,000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">持有年數</label>
+                            <input type="number" id="hold-years" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：10" min="0">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">適用稅率</label>
+                            <select id="tax-rate" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none">
+                                <option value="0.2">一般稅率 20%</option>
+                                <option value="0.3">一般稅率 30%（漲幅超過100%）</option>
+                                <option value="0.4">一般稅率 40%（漲幅超過200%）</option>
+                                <option value="0.1">自用住宅稅率 10%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="calcLandTax()" class="w-full py-3 bg-yellow-600 text-white font-bold rounded-sm hover:bg-yellow-700 transition">計算土地增值稅</button>
+                    <div id="land-tax-result" class="mt-6 hidden">
+                        <div class="bg-gray-900 text-white rounded-sm p-6 text-center">
+                            <p class="text-gray-400 text-sm mb-1">預估土地增值稅</p>
+                            <p class="text-3xl font-bold text-yellow-500" id="land-tax-amount">NT$ 0</p>
+                            <p class="text-gray-500 text-xs mt-3">*此為概估數字，實際金額依地政機關核定為準</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 契稅 Calculator -->
+            <div id="calc-deed-tax" class="calc-panel max-w-2xl mx-auto hidden">
+                <div class="bg-gray-50 rounded-sm p-8 border border-gray-200">
+                    <h4 class="font-bold text-lg mb-6 text-gray-900"><i class="fa-solid fa-file-invoice-dollar text-yellow-500 mr-2"></i>契稅概估</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">房屋評定現值 (元)</label>
+                            <input type="number" id="house-value" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：2,000,000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">契稅類別</label>
+                            <select id="deed-type" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none">
+                                <option value="0.06">買賣契稅 6%</option>
+                                <option value="0.04">典權契稅 4%</option>
+                                <option value="0.02">交換契稅 2%</option>
+                                <option value="0.06">贈與契稅 6%</option>
+                                <option value="0.02">分割契稅 2%</option>
+                                <option value="0.01">佔有契稅 1%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button onclick="calcDeedTax()" class="w-full py-3 bg-yellow-600 text-white font-bold rounded-sm hover:bg-yellow-700 transition">計算契稅</button>
+                    <div id="deed-tax-result" class="mt-6 hidden">
+                        <div class="bg-gray-900 text-white rounded-sm p-6 text-center">
+                            <p class="text-gray-400 text-sm mb-1">預估契稅金額</p>
+                            <p class="text-3xl font-bold text-yellow-500" id="deed-tax-amount">NT$ 0</p>
+                            <p class="text-gray-500 text-xs mt-3">*此為概估數字，實際金額依稅捐機關核定為準</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 房貸試算 Calculator -->
+            <div id="calc-mortgage" class="calc-panel max-w-2xl mx-auto hidden">
+                <div class="bg-gray-50 rounded-sm p-8 border border-gray-200">
+                    <h4 class="font-bold text-lg mb-6 text-gray-900"><i class="fa-solid fa-house-chimney text-yellow-500 mr-2"></i>房貸月付金試算</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">貸款金額 (萬元)</label>
+                            <input type="number" id="loan-amount" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：1000">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">年利率 (%)</label>
+                            <input type="number" id="interest-rate" step="0.01" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：2.1" value="2.1">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">貸款年限 (年)</label>
+                            <input type="number" id="loan-years" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 outline-none" placeholder="例：30" value="30">
+                        </div>
+                    </div>
+                    <button onclick="calcMortgage()" class="w-full py-3 bg-yellow-600 text-white font-bold rounded-sm hover:bg-yellow-700 transition">計算月付金額</button>
+                    <div id="mortgage-result" class="mt-6 hidden">
+                        <div class="bg-gray-900 text-white rounded-sm p-6">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                                <div>
+                                    <p class="text-gray-400 text-sm mb-1">每月繳款金額</p>
+                                    <p class="text-2xl font-bold text-yellow-500" id="monthly-payment">NT$ 0</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm mb-1">總繳利息</p>
+                                    <p class="text-2xl font-bold text-white" id="total-interest">NT$ 0</p>
+                                </div>
+                                <div>
+                                    <p class="text-gray-400 text-sm mb-1">本息總額</p>
+                                    <p class="text-2xl font-bold text-white" id="total-payment">NT$ 0</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-500 text-xs mt-4 text-center">*以本息平均攤還法計算，實際利率以銀行核定為準</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-gray-400 text-sm">需要更精確的稅務試算？<a href="#contact" class="text-yellow-600 font-bold hover:underline">聯繫我們</a>提供專業規劃服務</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 需備文件 (NEW) ==================== -->
+    <section id="documents" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-500 font-bold tracking-widest uppercase mb-2">Documents Checklist</h2>
+                <h3 class="text-3xl font-serif-heading font-bold">常見案件所需文件</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 rounded-sm p-6 border border-gray-700">
+                    <h4 class="text-yellow-500 font-bold mb-4"><i class="fa-solid fa-house mr-2"></i>買賣過戶</h4>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>買賣雙方身分證正本及影本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>印鑑證明（賣方）</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>土地、建物所有權狀正本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>最新土地/建物登記謄本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>戶籍謄本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>買賣契約書</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-sm p-6 border border-gray-700">
+                    <h4 class="text-yellow-500 font-bold mb-4"><i class="fa-solid fa-scroll mr-2"></i>繼承登記</h4>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>被繼承人死亡證明</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>除戶謄本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>全體繼承人戶籍謄本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>繼承系統表</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>遺產稅完（免）稅證明</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>遺產分割協議書（如有）</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gray-800 rounded-sm p-6 border border-gray-700">
+                    <h4 class="text-yellow-500 font-bold mb-4"><i class="fa-solid fa-gift mr-2"></i>贈與登記</h4>
+                    <ul class="text-gray-300 text-sm space-y-2">
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>贈與人身分證及印鑑證明</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>受贈人身分證</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>土地、建物所有權狀正本</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>贈與稅完（免）稅證明</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>贈與契約書</li>
+                        <li><i class="fa-regular fa-square-check mr-2 text-yellow-500"></i>最新登記謄本</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <p class="text-gray-400 text-sm">不確定需要哪些文件？<a href="#contact" class="text-yellow-500 hover:underline font-bold">LINE 我們</a>免費為您確認！</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 常見問題 FAQ (NEW) ==================== -->
+    <section id="faq" class="py-20 md:py-32 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">FAQ</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">常見問題</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">地政士（代書）和律師有什麼不同？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">地政士（俗稱代書）是通過國家專技考試，專門處理不動產登記、土地測量、稅務申報及契約簽證等事務的專業人士。律師則主要處理訴訟、法律爭議及法律諮詢。兩者專業領域不同，在不動產交易中通常互相配合。我們事務所也有合作律師團隊，可提供一站式服務。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">買房過戶需要多少時間？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">一般房屋買賣過戶從備齊文件到地政機關送件，約需 7~14 個工作天完成登記。實際時間依各地政事務所作業量、案件複雜度及文件是否齊全而定。如有抵押權設定，可與過戶同時辦理。我們會在整個過程中隨時向您報告進度。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">繼承不動產有期限嗎？逾期怎麼辦？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">被繼承人死亡後 6 個月內應辦理繼承登記。如逾期，每逾 1 個月加罰登記費 1 倍，最高可罰 20 倍。超過 1 年未辦理者，地政機關將公告列管。建議盡早辦理，避免產生額外費用及法律風險。如有特殊困難，可向稅捐機關申請延期。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">什麼是房地合一稅？稅率多少？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">房地合一稅是針對房屋及土地交易所得合併課稅的制度。2.0版（2021年7月起）依持有期間不同課以不同稅率：持有2年內為45%、2~5年為35%、5~10年為20%、10年以上為15%。自用住宅有400萬免稅額，超過部分稅率10%。我們可協助您做最有利的稅務規劃。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">夫妻之間贈與不動產需要繳稅嗎？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">配偶之間不動產贈與可申報免繳贈與稅（不計入贈與總額），但仍需繳納土地增值稅、契稅及相關規費。值得注意的是，如果之後出售，房地合一稅的持有期間是從原配偶取得日起算，這部分稅務規劃很重要，建議事先諮詢。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">如何節省土地增值稅？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">合法節省土地增值稅的方式包括：申請自用住宅優惠稅率（10%）、善用一生一次/一生一屋的優惠、重購退稅（先買後賣或先賣後買在2年內完成），以及利用「農地農用」免稅規定等。每個案件的最佳策略不同，建議提前諮詢規劃。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-sm border border-gray-200 overflow-hidden">
+                    <button class="faq-toggle w-full flex justify-between items-center p-6 text-left hover:bg-gray-50 transition" onclick="toggleFaq(this)">
+                        <span class="font-bold text-gray-900">可以用 LINE 線上諮詢嗎？</span>
+                        <i class="fa-solid fa-chevron-down faq-chevron text-yellow-500"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6">
+                        <p class="text-gray-600 text-sm leading-relaxed">當然可以！我們提供 LINE 線上諮詢服務，不受時間和地點限制。您可以加入我們的 LINE 官方帳號，直接傳訊詢問。我們會在上班時間盡速回覆，較複雜的問題也可以預約時間詳細說明。歡迎點選頁面右下角的 LINE 按鈕加入好友！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 客戶見證 (NEW) ==================== -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-yellow-600 font-bold tracking-widest uppercase mb-2">Testimonials</h2>
+                <h3 class="text-4xl font-serif-heading font-bold text-gray-900">客戶好評推薦</h3>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
+            </div>
+
+            <!-- ===== TODO: 請替換為真實客戶見證內容 ===== -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">"方地政士非常專業細心，繼承登記的流程很複雜，但她一步步幫我們處理得很順利，節省了不少稅金。非常推薦！"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-bold">陳</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">陳先生</p>
+                            <p class="text-gray-400 text-xs">繼承登記客戶</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">"第一次買房什麼都不懂，幸好有方珮玲事務所全程協助。從合約審查到過戶完成，每個環節都交代得很清楚，讓人很放心。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-bold">林</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">林小姐</p>
+                            <p class="text-gray-400 text-xs">首購過戶客戶</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card bg-gray-50 p-8 rounded-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6 italic">"公司長期配合方事務所處理土地開發案的產權登記，效率高且零失誤。稅務規劃也幫公司省下可觀的成本，值得信賴的專業夥伴。"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-600 font-bold">王</div>
+                        <div>
+                            <p class="font-bold text-gray-900 text-sm">王經理</p>
+                            <p class="text-gray-400 text-xs">企業合作客戶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LINE CTA Banner (NEW) ==================== -->
+    <section class="py-16 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <i class="fa-brands fa-line text-4xl"></i>
+                <h3 class="text-3xl font-bold">加入 LINE 官方帳號</h3>
+            </div>
+            <p class="text-green-100 mb-8 text-lg">免費線上諮詢，不受時間地點限制。案件進度即時通知！</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <!-- ===== TODO: 請替換為您的 LINE 官方帳號連結 ===== -->
+                <a href="https://lin.ee/0gfKgWX" target="_blank" class="px-8 py-3 bg-white text-green-700 font-bold rounded-full hover:bg-green-50 transition shadow-lg">
+                    <i class="fa-brands fa-line mr-2"></i>加入好友
+                </a>
+                <div class="bg-white rounded-lg p-3 w-32 h-32 flex items-center justify-center">
+                    <img src="https://qr-official.line.me/gs/M_558csnid_GW.png" alt="LINE QR Code" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 成功案例 ==================== -->
+    <section id="cases" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-1/3">
+                    <h2 class="text-yellow-500 font-bold tracking-widest uppercase mb-2">Our Expertise</h2>
+                    <h3 class="text-3xl font-serif-heading font-bold mb-6">解決疑難雜症<br>創造資產價值</h3>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        面對複雜的產權問題或繁瑣的稅務計算，我們擁有豐富的實務經驗，能為您找出最佳解決方案。
+                    </p>
+                    <a href="#contact" class="text-yellow-500 hover:text-white transition duration-300 font-bold">
+                        查看更多案例 <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </a>
+                </div>
+
+                <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- ===== TODO: 請替換為實際案例圖片 ===== -->
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1073&q=80" alt="Case Study 1" class="rounded-sm opacity-80 hover:opacity-100 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Case Study 2" class="rounded-sm opacity-80 hover:opacity-100 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== 聯絡我們 ==================== -->
+    <section id="contact" class="py-20 md:py-32 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-50 shadow-2xl rounded-sm overflow-hidden flex flex-col md:flex-row">
+                <div class="bg-gray-900 text-white p-10 md:w-2/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 font-serif-heading">Contact Us</h3>
+                        <p class="text-gray-400 mb-8">無論是買賣過戶、繼承規劃或稅務諮詢，歡迎隨時與我們聯繫，我們將竭誠為您服務。</p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-location-dot text-yellow-500 mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-bold text-sm uppercase tracking-wide text-gray-400">Address</p>
+                                    <!-- ===== TODO: 請填入實際事務所地址 ===== -->
+                                    <p class="p-1 rounded text-sm">桃園市中壢區華勛街5巷15號</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-phone text-yellow-500 mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-bold text-sm uppercase tracking-wide text-gray-400">Phone</p>
+                                    <!-- ===== TODO: 請填入實際電話號碼 ===== -->
+                                    <p class="p-1 rounded text-sm">03-4161262</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-mobile-screen text-yellow-500 mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-bold text-sm uppercase tracking-wide text-gray-400">Mobile</p>
+                                    <!-- ===== TODO: 請填入手機號碼 ===== -->
+                                    <p class="p-1 rounded text-sm">0932-932-668</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-envelope text-yellow-500 mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-bold text-sm uppercase tracking-wide text-gray-400">Email</p>
+                                    <!-- ===== TODO: 請填入實際Email ===== -->
+                                    <p class="p-1 rounded text-sm">angel0932668@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fa-solid fa-clock text-yellow-500 mt-1 w-6"></i>
+                                <div>
+                                    <p class="font-bold text-sm uppercase tracking-wide text-gray-400">Office Hours</p>
+                                    <p>週一至週五 09:00 - 18:00</p>
+                                    <p class="text-gray-500 text-sm">週六可預約</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex gap-4">
+                        <!-- ===== TODO: 請填入Facebook粉絲頁連結 ===== -->
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <!-- ===== TODO: 請填入LINE官方帳號連結 ===== -->
+                        <a href="https://lin.ee/0gfKgWX" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-line"></i></a>
+                        <!-- ===== TODO: 如有Instagram請填入 ===== -->
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="p-10 md:w-3/5 bg-white">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">預約免費諮詢</h3>
+                    <form id="contact-form" class="space-y-6" onsubmit="handleFormSubmit(event)">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">姓名 <span class="text-red-500">*</span></label>
+                                <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition" placeholder="您的姓名">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">聯絡電話 <span class="text-red-500">*</span></label>
+                                <input type="tel" name="phone" required class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition" placeholder="0912-345-678">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <input type="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition" placeholder="your@email.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">諮詢項目 <span class="text-red-500">*</span></label>
+                                <select name="service" required class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition">
+                                    <option value="">請選擇</option>
+                                    <option>不動產買賣過戶</option>
+                                    <option>繼承登記</option>
+                                    <option>贈與登記/節稅規劃</option>
+                                    <option>稅務試算諮詢</option>
+                                    <option>抵押權設定/塗銷</option>
+                                    <option>合約撰擬/簽證</option>
+                                    <option>銀行貸款協助</option>
+                                    <option>日本不動產/移民</option>
+                                    <option>其他法律諮詢</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">希望聯絡方式</label>
+                            <div class="flex gap-4 flex-wrap">
+                                <label class="flex items-center gap-2 text-sm text-gray-600">
+                                    <input type="checkbox" name="contact_method" value="phone" class="accent-yellow-500"> 電話
+                                </label>
+                                <label class="flex items-center gap-2 text-sm text-gray-600">
+                                    <input type="checkbox" name="contact_method" value="line" class="accent-yellow-500"> LINE
+                                </label>
+                                <label class="flex items-center gap-2 text-sm text-gray-600">
+                                    <input type="checkbox" name="contact_method" value="email" class="accent-yellow-500"> Email
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">詳細說明</label>
+                            <textarea name="details" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-sm focus:ring-2 focus:ring-yellow-500 focus:border-transparent outline-none transition" placeholder="請簡述您的需求或遇到的問題..."></textarea>
+                        </div>
+
+                        <button type="submit" id="submit-btn" class="w-full py-3 bg-yellow-600 text-white font-bold tracking-wider hover:bg-yellow-700 transition duration-300 rounded-sm shadow-md">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>發送諮詢
+                        </button>
+                        <p class="text-gray-400 text-xs text-center">提交後我們將於 1 個工作天內與您聯繫</p>
+                    </form>
+                    <div id="form-success" class="hidden text-center py-12">
+                        <i class="fa-solid fa-circle-check text-green-500 text-5xl mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">感謝您的諮詢！</h4>
+                        <p class="text-gray-500">我們已收到您的訊息，將於 1 個工作天內與您聯繫。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="mt-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.5!2d121.2257!3d24.9537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5qGD5ZyS5biC5Lit5aOi5Y2A6I-v5YuL6KGXNeW3tzE16Jmf!5e0!3m2!1szh-TW!2stw!4v1700000000000" width="100%" height="300" style="border:0; border-radius:4px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer ==================== -->
+    <footer class="bg-black text-white pt-16 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-xl font-bold font-serif-heading tracking-wider flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-scale-balanced text-yellow-500"></i>
+                        <span>FANG PEI-LING <span class="text-yellow-500">OFFICE</span></span>
+                    </div>
+                    <p class="text-gray-400 max-w-sm mb-6 text-sm leading-relaxed">
+                        方珮玲地政士事務所，您最值得信賴的不動產專業顧問。我們用心守護您的每一分資產，確保交易安全與傳承順利。
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://lin.ee/0gfKgWX" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-line"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-yellow-500 hover:text-gray-900 transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2 inline-block">網站地圖</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#home" class="hover:text-yellow-500 transition">回到首頁</a></li>
+                        <li><a href="#about" class="hover:text-yellow-500 transition">關於事務所</a></li>
+                        <li><a href="#services" class="hover:text-yellow-500 transition">專業服務</a></li>
+                        <li><a href="#pricing" class="hover:text-yellow-500 transition">收費標準</a></li>
+                        <li><a href="#calculator" class="hover:text-yellow-500 transition">稅務試算</a></li>
+                        <li><a href="#faq" class="hover:text-yellow-500 transition">常見問題</a></li>
+                        <li><a href="#contact" class="hover:text-yellow-500 transition">聯絡我們</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold mb-4 border-b border-gray-800 pb-2 inline-block">營業時間</h4>
+                    <p class="text-gray-400 text-sm mb-2">週一至週五: 09:00 - 18:00</p>
+                    <p class="text-gray-400 text-sm mb-4">週六: 預約制</p>
+                    <p class="text-gray-400 text-sm mb-4">週日/國定假日: 休息</p>
+                    <h4 class="text-lg font-bold mb-2 border-b border-gray-800 pb-2 inline-block">快速聯絡</h4>
+                    <!-- ===== TODO: 填入實際電話 ===== -->
+                    <p class="text-yellow-500 font-bold">03-4161262</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+                <p>&copy; 2025 方珮玲地政士事務所. All rights reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">隱私權政策</a>
+                    <a href="#" class="hover:text-white transition">免責聲明</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== Floating LINE Button ==================== -->
+    <!-- ===== TODO: 請替換為您的 LINE 官方帳號連結 ===== -->
+    <a href="https://lin.ee/0gfKgWX" target="_blank" class="floating-line" title="LINE 線上諮詢">
+        <i class="fa-brands fa-line text-3xl"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到頂端">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== JavaScript ==================== -->
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+
+        // Navbar scroll effect + Back to top
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const backToTop = document.getElementById('back-to-top');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+            if (window.scrollY > 500) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // FAQ Accordion
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const chevron = button.querySelector('.faq-chevron');
+
+            // Close all others
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                if (a !== answer) { a.classList.remove('open'); }
+            });
+            document.querySelectorAll('.faq-chevron').forEach(c => {
+                if (c !== chevron) { c.classList.remove('rotate'); }
+            });
+
+            answer.classList.toggle('open');
+            chevron.classList.toggle('rotate');
+        }
+
+        // Calculator Tabs
+        function showCalcTab(tabId) {
+            document.querySelectorAll('.calc-panel').forEach(p => p.classList.add('hidden'));
+            document.getElementById('calc-' + tabId).classList.remove('hidden');
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('active');
+                b.classList.remove('text-yellow-600');
+                b.classList.remove('border-yellow-500');
+                b.classList.add('border-transparent');
+                b.classList.add('text-gray-500');
+            });
+            event.target.classList.add('active', 'text-yellow-600', 'border-yellow-500');
+            event.target.classList.remove('border-transparent', 'text-gray-500');
+        }
+
+        // Land Tax Calculator
+        function calcLandTax() {
+            const prev = parseFloat(document.getElementById('prev-value').value) || 0;
+            const curr = parseFloat(document.getElementById('curr-value').value) || 0;
+            const rate = parseFloat(document.getElementById('tax-rate').value);
+
+            if (prev <= 0 || curr <= 0) { alert('請輸入有效的金額'); return; }
+
+            const diff = curr - prev;
+            if (diff <= 0) {
+                document.getElementById('land-tax-amount').textContent = 'NT$ 0（無漲價，免稅）';
+            } else {
+                const tax = Math.round(diff * rate);
+                document.getElementById('land-tax-amount').textContent = 'NT$ ' + tax.toLocaleString();
+            }
+            document.getElementById('land-tax-result').classList.remove('hidden');
+        }
+
+        // Deed Tax Calculator
+        function calcDeedTax() {
+            const value = parseFloat(document.getElementById('house-value').value) || 0;
+            const rate = parseFloat(document.getElementById('deed-type').value);
+
+            if (value <= 0) { alert('請輸入有效的房屋評定現值'); return; }
+
+            const tax = Math.round(value * rate);
+            document.getElementById('deed-tax-amount').textContent = 'NT$ ' + tax.toLocaleString();
+            document.getElementById('deed-tax-result').classList.remove('hidden');
+        }
+
+        // Mortgage Calculator
+        function calcMortgage() {
+            const principal = (parseFloat(document.getElementById('loan-amount').value) || 0) * 10000;
+            const annualRate = (parseFloat(document.getElementById('interest-rate').value) || 0) / 100;
+            const years = parseInt(document.getElementById('loan-years').value) || 0;
+
+            if (principal <= 0 || annualRate <= 0 || years <= 0) { alert('請輸入有效的數值'); return; }
+
+            const monthlyRate = annualRate / 12;
+            const months = years * 12;
+            const monthly = Math.round(principal * monthlyRate * Math.pow(1 + monthlyRate, months) / (Math.pow(1 + monthlyRate, months) - 1));
+            const totalPayment = monthly * months;
+            const totalInterest = totalPayment - principal;
+
+            document.getElementById('monthly-payment').textContent = 'NT$ ' + monthly.toLocaleString();
+            document.getElementById('total-interest').textContent = 'NT$ ' + totalInterest.toLocaleString();
+            document.getElementById('total-payment').textContent = 'NT$ ' + totalPayment.toLocaleString();
+            document.getElementById('mortgage-result').classList.remove('hidden');
+        }
+
+        // Contact Form Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contact-form');
+            const successMsg = document.getElementById('form-success');
+
+            // Here you would normally send to a backend / email service
+            // For now, show success message
+            form.classList.add('hidden');
+            successMsg.classList.remove('hidden');
+
+            // Reset after 5 seconds
+            setTimeout(() => {
+                form.classList.remove('hidden');
+                successMsg.classList.add('hidden');
+                form.reset();
+            }, 5000);
+        }
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
